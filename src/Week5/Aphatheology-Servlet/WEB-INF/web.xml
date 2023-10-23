@@ -1,0 +1,10 @@
+<web-app>
+    <servlet>
+        <servlet-name>Aphatheology</servlet-name>
+        <servlet-class>AphatheologyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Aphatheology</servlet-name>
+        <url-pattern>/aphatheology</url-pattern>
+    </servlet-mapping>
+</web-app>
