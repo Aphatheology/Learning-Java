@@ -18,4 +18,18 @@ public class AphatheologyServlet extends HttpServlet {
 
         pw.write(htmlContent);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+
+        System.out.println("Userame: " + username);
+        System.out.println("Password: " + password);
+
+        response.setContentType("text/html");
+        PrintWriter pw = response.getWriter();
+        pw.write("<h1>Username and Password submitted successfully</h1>");
+        pw.close();
+    }
 }

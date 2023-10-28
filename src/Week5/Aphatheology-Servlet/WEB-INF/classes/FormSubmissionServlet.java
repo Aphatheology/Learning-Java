@@ -18,7 +18,7 @@ public class FormSubmissionServlet extends HttpServlet {
 
         response.setContentType("text/html");
         PrintWriter pw = response.getWriter();
-        pw.write("<h1>Form submitted successfully</h1>");
+        pw.write("<h1>Contact Me Form submitted successfully</h1>");
         pw.close();
     }
 }
