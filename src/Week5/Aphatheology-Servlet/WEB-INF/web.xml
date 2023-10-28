@@ -7,4 +7,13 @@
         <servlet-name>Aphatheology</servlet-name>
         <url-pattern>/aphatheology</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FormSubmission</servlet-name>
+        <servlet-class>FormSubmissionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FormSubmission</servlet-name>
+        <url-pattern>/submit</url-pattern>
+    </servlet-mapping>
 </web-app>

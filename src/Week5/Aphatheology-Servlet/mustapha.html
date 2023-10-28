@@ -1,39 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Full Name - Learning Servlet</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        p {
-            text-align: center;
-            font-size: 18px;
-            color: #666;
-        }
-
-        a {
-            text-align: center;
-            display: block;
-            font-size: 24px;
-            color: #0077cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Learning Servlet</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <p>Welcome, my full name is:</p>
-    <h1>Mustapha Abdulkareem</h1>
+<p>Welcome, my full name is:</p>
+<h1>Mustapha</h1>
+
+<h2>Contact Me</h2>
+<form method="post" action="/Aphatheology-Servlet/submit">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+</form>
 </body>
 </html>
